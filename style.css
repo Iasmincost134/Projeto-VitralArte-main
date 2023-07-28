@@ -1,0 +1,139 @@
+@font-face {
+    font-family: RobotoBold ;
+    src: url(Projeto-VitralArte-main/Font/Roboto-Bold.ttf);
+}
+
+
+
+/* RESET CSS */
+*{
+    border: 0;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+
+/* cabeçalho */
+.container{
+    display: flex;
+   margin: 35px 200px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.inicio{
+    display: flex;
+   margin: 0 250px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+#cabeçalho{
+    background-color: #106EEA;
+}
+.nome{
+    font:  500 20px 'Lucida', sans-serif;
+    color: white;
+}
+.empresa{
+    font:  700 40px 'Lucida', sans-serif;
+    color: black;
+}
+.item {
+    font: 500 25px 'Lucida', sans-serif ;
+    color: black;
+    margin-left: 50px;
+ }
+/* fim do cabeçalho */
+.conteudo {
+  margin: -300px 0 350px 800px;
+  text-align: center;
+ }
+ .subtitulo{
+    margin-top: 10px;
+ }
+ .sobrenos{
+    display: flex;
+ }
+ .textcolor, .blue{
+    text-align: center;
+    font: 700 35px 'RobotoBold';
+ }
+ .blue{
+    color: #106EEA;
+ }
+ .textsobre, .paragrafo{
+    text-align: justify;
+    margin-top: 10px;
+    font-family: Open Sans;
+font-size: 24px;
+font-weight: 490;
+line-height: 33px;
+
+ }
+ .textsobre{
+    margin-top: 100px;
+ }
+ .paragrafo{
+   padding: 8px 45px;
+ }
+ 
+ .equipimg{
+    width: 350px;
+ }
+/* fim sobre nos */
+.caixas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+   
+ }
+ .caixas .imagem img{
+    width: 60px;
+    height: auto;
+    padding-bottom: 20px;
+ }
+ .caixa {
+    text-align: center;
+    padding: 20px 25px;
+    border: 1px solid #8CA9CE;
+    border-radius: 10px ;
+    width: 200px;
+    background-color: #F1F6FE;
+    height: 190px;
+ }
+ .numero{
+    font: 700 30px Open Sans;
+ }
+ .texto{
+    font:'Roboto-Regular';
+    font-size: 19px;
+}
+.numero, .texto{
+    padding: 3px 0;
+}
+/* SERVIÇOS */
+.paragrafo1{
+    padding: 15px 70px;
+    text-align: center;
+  }
+  /* caixas */
+  .caixa1 {
+    text-align: center;
+    padding: 20px 25px;
+    border: 1px solid black;
+    width: 200px;
+    background-color: white;
+    height: 170px;
+    flex-wrap: wrap;
+ }
