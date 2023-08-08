@@ -1,6 +1,32 @@
 @font-face {
-    font-family: RobotoBold ;
-    src: url(Projeto-VitralArte-main/Font/Roboto-Bold.ttf);
+   font-family: 'Open-Sans Regular';
+   src: url(Font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+   font-family: 'Open-Sans Bold';
+   src: url(Font/OpenSans-Bold.ttf);
+}
+
+@font-face {
+   font-family: 'Poppins Regular';
+   src: url(Font/Poppins-Regular.ttf);
+}
+
+@font-face {
+   font-family: 'Poppins Bold';
+   src: url(Font/Poppins-Bold.ttf);
+}
+
+@font-face {
+   font-family: 'Roboto Regular';
+   src: url(Font/Roboto-Regular.ttf);
+}
+
+
+@font-face {
+   font-family: 'Roboto Bold';
+   src: url(Font/Roboto-Bold.ttf);
 }
 
 
@@ -22,50 +48,58 @@ a{
 
 /* cabeçalho */
 .container{
+
+   margin: 0 150px;
     display: flex;
-   margin: 35px 200px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.inicio{
-    display: flex;
-   margin: 0 250px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+
+.logo{
+ display: flex;
+ margin: 2px 0;
 }
 #cabeçalho{
     background-color: #106EEA;
+    height: 35px;
 }
-.nome{
-    font:  500 20px 'Lucida', sans-serif;
+.nome , .number{
+   font: 500 20px 'Open-Sans Regular', sans-serif;
     color: white;
 }
+.number{
+   margin-left: 30px;
+}
+
 .empresa{
-    font:  700 40px 'Lucida', sans-serif;
+   font: 700 45px 'Poppins Bold', sans-serif;
     color: black;
 }
-.item {
-    font: 500 25px 'Lucida', sans-serif ;
+.item , .lista {
+   font: 500 22px 'Open-Sans Regular', sans-serif;
     color: black;
-    margin-left: 50px;
+    margin-left: 30px;
  }
+
 /* fim do cabeçalho */
 .conteudo {
-  margin: -300px 0 350px 800px;
+  margin: -300px 40px 380px 800px;
   text-align: center;
+ }
+ .titulo{
+   font: 700 60px 'Poppins Bold', sans-serif;
  }
  .subtitulo{
     margin-top: 10px;
+    font: 500 31px 'Poppins Regular', sans-serif;
  }
  .sobrenos{
     display: flex;
+    margin-top: -150px;
  }
  .textcolor, .blue{
     text-align: center;
-    font: 700 35px 'RobotoBold';
+    font: 700 35px 'Roboto Bold', sans-serif;
  }
  .blue{
     color: #106EEA;
@@ -80,10 +114,11 @@ line-height: 33px;
 
  }
  .textsobre{
-    margin-top: 100px;
+    margin-top: 60px;
  }
  .paragrafo{
-   padding: 8px 45px;
+   padding: 8px 45px 20px;
+   font: 500 22px 'Open-Sans Regular', sans-serif;
  }
  
  .equipimg{
@@ -95,7 +130,7 @@ line-height: 33px;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 10px;
    
  }
  .caixas .imagem img{
@@ -110,30 +145,206 @@ line-height: 33px;
     border-radius: 10px ;
     width: 200px;
     background-color: #F1F6FE;
-    height: 190px;
+    height: 210px;
+    margin: 0 10px;
  }
  .numero{
-    font: 700 30px Open Sans;
+   font: 700 30px 'Open-Sans Bold', sans-serif;
  }
- .texto{
-    font:'Roboto-Regular';
+ .textonumber{
+   font: 500 20px 'Roboto Regular', sans-serif;
     font-size: 19px;
+    white-space: nowrap;
 }
-.numero, .texto{
+.numero, .textonumber{
     padding: 3px 0;
 }
 /* SERVIÇOS */
 .paragrafo1{
     padding: 15px 70px;
-    text-align: center;
+    text-align: justify;
+    font: 500 22px 'Open-Sans Regular', sans-serif;
   }
   /* caixas */
-  .caixa1 {
-    text-align: center;
-    padding: 20px 25px;
-    border: 1px solid black;
-    width: 200px;
-    background-color: white;
-    height: 170px;
-    flex-wrap: wrap;
- }
+  .section .container{
+   flex-direction: column;
+  }
+  .caixas{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  }
+  .caixa1{
+   background-color: #F1F6FE;
+   border: 1px solid #8CA9CE;
+   text-align: center;
+    height: 245px;
+   width: 250px; 
+   border-radius: 10px;
+   margin: 10px 10px; 
+   padding: 30px 20px;
+  }
+  .caixas .caixa1 {
+   width: 275px;
+   height: 190px;
+   margin: 10px 10px;
+   display: flex;
+   align-items: center;
+   justify-self: center;
+   border-radius: 7px;
+   background-color: white;
+
+}
+.textos{
+   font: 600 24px 'Roboto Bold', sans-serif;
+   width: 100%;
+}
+.line{
+   height: 2px;
+   background-color: #1150A3;
+   margin: 80px 0;
+}
+
+/* NOSSA EQUIPE */
+.pessoas {
+   display: flex;
+   text-align: center;
+   margin: 50px 0;
+}
+.nossa-equipe .container{
+   flex-direction: column;
+}
+.conteudo-pessoa{
+   border: 1px solid black;
+   border-radius: 7px;
+   margin: 0 50px;
+}
+.lorem {
+   font: 700 24px 'Poppins Bold', sans-serif;
+}
+
+.ipsum {
+   font: 500 20px 'Roboto Regular', sans-serif;
+}
+.informacao{
+   padding: 10px 15px;
+}
+ .textoparagrafo{
+   text-align: justify;
+}
+.texto1{
+   font: 500 22px 'Open-Sans Regular', sans-serif;
+   color: black;
+   margin-left: 50px;
+} 
+.titulo1{
+  
+      font: 700 35px 'Roboto Bold', sans-serif;
+      margin-bottom: 15px;
+}
+.organiza{
+   text-align: center;
+  margin: 0 240px;
+}
+.informacoes {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 50px;
+}
+.texto2{
+   font: 500 22px 'Open-Sans Regular', sans-serif;
+   text-align: justify;
+}
+.endereco {
+   border: 1px solid #8CA9CE;
+   height: 400px;
+   width: 28%;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 7px;
+}
+.endereco-nome {
+   font: 700 30px 'Roboto Bold', sans-serif;
+   margin-bottom: 30px;
+}
+.endereco-local {
+   font:500 30px 'Roboto Regular', sans-serif;
+   text-align: center;
+}
+.formulario {
+   margin-left: 50px;
+}
+
+.formulario form {
+   display: flex;
+   flex-direction: column;
+   align-self: center;
+   justify-content: center;
+}
+input, textarea {
+   background-color: #E5E5E5;
+   padding: 7px;
+   border-radius: 15px;
+   margin: 15px 0;
+}
+
+input {
+   height: 60px;
+}
+
+textarea {
+   height: 160px;
+}
+
+.botao {
+   text-align: center;
+}
+
+button {
+   background-color: #106EEA;
+   color: white;
+   font: 600 30px 'Roboto Bold', sans-serif;
+   border-radius: 15px;
+   width: 70%;
+   height: 60px;
+   margin-bottom: 100px;
+}
+/* 
+footer */
+footer{
+   width: 100%;
+   height: 280px;
+   background-color: #1150A3;
+}
+.footer-informacoes{
+   display: flex;
+   margin: 50px 150px;
+ 
+}
+.text-footer{
+   font: 500 22px 'Open-Sans Regular', sans-serif;
+   color: white;
+   text-align: center;
+   padding: 2px 0;
+   white-space: nowrap;
+}
+
+.texto3{
+   font: 500 30px 'Open-Sans Regular', sans-serif ;
+   color: white;
+} 
+.icones{
+   width: 20%;
+   height: 50px;
+   display: flex;
+   margin-top: 30px ;
+}
+.redes-sociais{
+   margin: 20px 300px;
+   white-space: nowrap;
+}
